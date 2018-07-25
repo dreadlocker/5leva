@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #421b40;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            height: 100%;
+            position: relative;
+        }
+
+
+        .square {
+            display: flex;
+
+            width: 10%;
+            height: 9%;
+            background-image: url('./20120426-CADIPLYBZQG-1335432311.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background: linear-gradient( 180deg,
+            rgba(151, 202, 222, 1) 0%,
+            rgba(101, 183, 223, 1) 33%,
+            rgba(29, 76, 173, 1) 100%);
+
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f181a', endColorstr='#0f181a', GradientType=0); */
+            position: absolute;
+        }
+
+        .s1 {
+            opacity: 0;
+            /* animation: fly1 0.45s ease-out 0s infinite; */
+            animation: fly1 1.36s ease-out .1s infinite;
+        }
+
+        .s2 {
+            opacity: 0;
+            animation: fly2 1.36s ease-in .1s infinite;
+        }
+
+        .s3 {
+            opacity: 0;
+            animation: fly3 1.36s ease-out .1s infinite;
+        }
+
+        .s4 {
+            opacity: 0;
+            animation: fly4 1.36s ease-in .1s infinite;
+        }
+
+        .s5 {
+            opacity: 0;
+            animation: fly5 1.36s ease-out .15s infinite;
+        }
+
+        .s6 {
+            opacity: 0;
+            animation: fly61 1.36s ease-in .15s infinite;
+        }
+
+        .s7 {
+            opacity: 0;
+            animation: fly7 1.36s ease-out .15s infinite;
+        }
+
+        .s8 {
+            opacity: 0;
+            animation: fly8 1.36s ease-in .25s infinite;
+        }
+
+        .s9 {
+            opacity: 0;
+            animation: fly9 1.36s ease-out .25s infinite;
+        }
+
+        .s10 {
+            opacity: 0;
+            animation: fly10 1.36s ease-in .25s infinite;
+        }
+
+        /* ANIMATION VARIATIONS */
+
+        @keyframes fly1 {
+            from {
+                opacity: 0.3;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 40%;
+                left: 70%;
+                transform: scale(2, 2) rotate(10deg);
+            }
+        }
+
+        @keyframes fly2 {
+            from {
+                opacity: 0.5;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 35%;
+                left: 70%;
+                transform: scale(2, 2) rotate(-10deg);
+            }
+        }
+
+        @keyframes fly3 {
+            from {
+                opacity: 0.25;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 27%;
+                left: 70%;
+                transform: scale(2, 2) rotate(10deg);
+            }
+        }
+
+
+        @keyframes fly4 {
+            from {
+                opacity: 0.5;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 55%;
+                left: 70%;
+                transform: scale(2, 2) rotate(-15deg);
+            }
+        }
+
+        @keyframes fly5 {
+            from {
+                opacity: 0.15;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 41%;
+                left: 70%;
+                transform: scale(2, 2) rotate(15deg);
+            }
+        }
+
+        @keyframes fly6 {
+            from {
+                opacity: 0.3;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 67%;
+                left: 70%;
+                transform: scale(2, 2) rotate(-10deg);
+            }
+        }
+
+        @keyframes fly7 {
+            from {
+                opacity: 0.5;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 63%;
+                left: 70%;
+                transform: scale(2, 2) rotate(10deg);
+            }
+        }
+
+        @keyframes fly8 {
+            from {
+                opacity: 0.25;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 39%;
+                left: 70%;
+                transform: scale(2, 2) rotate(-10deg);
+            }
+        }
+
+        @keyframes fly9 {
+            from {
+                opacity: 0.5;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 43%;
+                left: 70%;
+                transform: scale(2, 2) rotate(10deg);
+            }
+        }
+
+        @keyframes fly10 {
+            from {
+                opacity: 0.5;
+                top: 40%;
+                left: 0%;
+                transform: scale(1, 1);
+            }
+            to {
+                opacity: 1;
+                top: 58%;
+                left: 70%;
+                transform: scale(2, 2) rotate(-10deg);
+            }
+        }
+
+        #btn {
+            width: 8%;
+            height: 3%;
+            font-size: 120%;
+        }
+
+        .cell {
+            border: 0.1vmin solid #96c9de;
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            width: 20%;
+            height: 60%;
+        }
+
+        #zaki {
+            opacity: 0;
+            position: absolute;
+            top: 10%;
+            left: 56%;
+            width: 30%;
+            height: 80%;
+            background-image: url('./zaki.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            z-index: -1;
+            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) infinite;
+        }
+
+        @keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button id="btn">Click</button>
+        <div class="world"></div>
+        <div id="zaki"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        $('#btn').click(() => {
+            $('.world').empty();
+            setTimeout(()=> $('#zaki').css('opacity','1'),600);
+            arr = arr.sort(() => .5 - Math.random()); // shuffle array on click
+            for (let i = 0; i < arr.length; i++) {
+                $('.world').append($(' <div class="square s' + (i + 1) + '"></div>')); // append divs
+                // filltickets(arr, i); // fill tickets with numbers, and divs with white cells
+            }
+        });
+
+        /* Tickets with Numbers Array */
+        let arr = [
+            [2, 32, 7, 9, 19],
+            [22, 12, 8, 19, 32],
+            [32, 2, 6, 16, 26],
+            [17, 12, 4, 14, 1],
+            [33, 32, 15, 12, 5],
+            [1, 32, 2, 9, 19],
+            [3, 12, 5, 22, 2],
+            [4, 3, 7, 16, 21],
+            [14, 4, 9, 3, 5],
+            [16, 2, 7, 19, 9],
+        ];
+
+        function filltickets(numbers, index) {
+            /* Fill and append data to ticket's cells */
+            numbers[index].map((num) => $('.s' + (index + 1)).append($(' <div class="cell">' + num + '</div>')));
+        }
+
+    </script>
+</body>
+
+</html>
